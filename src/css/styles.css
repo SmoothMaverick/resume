@@ -47,7 +47,7 @@ body {
 }
 
 .hero-title > .title {
-  font-size: 60pt;
+  font-size: 50pt;
   line-height: 48pt;
 }
 
@@ -62,7 +62,7 @@ body {
 .timeline-item {
   font-size: 11pt;
   margin-bottom: 10pt;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .item-dates {
@@ -100,6 +100,7 @@ i {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14pt;
+  margin-bottom: 0.1em;
 }
 
 .item-detail {
@@ -109,10 +110,15 @@ i {
   color: #62666b;
 }
 
+li.item-summary {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
 .page-line {
   top: 1em;
   bottom: 0;
-  left: 180px;
+  left: 235px;
   position: absolute;
   border-left: 3px solid #8a8b8a;
 }
@@ -122,7 +128,7 @@ i {
 }
 
 .icon-items {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 /* Allow wrapping */
@@ -144,7 +150,8 @@ i {
 }
 
 .tidbit {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  margin-left: 5em;
 }
 
 .inline-icon-item i {
