@@ -6,16 +6,31 @@ const Personal = {
 
 const Location = {
   SF: 'San Francisco, CA',
-  RWC: 'Redwood City, CA'
+  RWC: 'Redwood City, CA',
+  SanCarlos: 'San Carlos, CA',
 };
 
 const jobItems = [
+  {
+    title: 'Education Elements',
+    subtitle: 'DevOps Engineer',
+    detail: Location.SanCarlos,
+    startDate: 'Dec 2016',
+    endDate: 'Oct 2017',
+    faIcon: 'fa-graduation-cap',
+    summary: [
+      'Managed servers with Salt and Chef, but worked on migrating to Kubernetes and Docker',
+      'Deployed Prometheus for monitoring Kubernetes services',
+      'Developed on-demand deployment for QA environment to reduce AWS costs.',
+      'Reduced AWS costs by 33% within the first 4 months.',
+    ]
+  },
   {
     title: 'Itson, Inc.',
     subtitle: 'DevOps Engineer',
     detail: Location.RWC,
     startDate: 'May 2015',
-    endDate: 'Present',
+    endDate: 'Nov 2016',
     faIcon: 'fa-mobile',
     summary: [
       'Managed deployment of our initial saas infrastructure to production, partnered with large telecom carriers (Sprint, Telefonica, Sapphire).',
