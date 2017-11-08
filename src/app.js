@@ -70,56 +70,6 @@ const jobItems = [
   },
 ];
 
-const languageIconItems = [
-  {
-    title: 'Ruby',
-    devicon: 'devicon-ruby-plain',
-  },
-  {
-    title: 'Python',
-    devicon: 'devicon-python-plain',
-  },
-  {
-    title: 'Go',
-    devicon: 'devicon-go-plain',
-  },
-];
-
-const skillsIconItems = [
-  {
-    title: 'chef',
-    devicon: 'devicon-ssh-plain',
-  },
-  {
-    title: 'puppet',
-    devicon: 'devicon-laravel-plain',
-  },
-  {
-    title: 'terraform',
-    devicon: 'devicon-travis-plain',
-  },
-  {
-    title: 'aws',
-    devicon: 'devicon-amazonwebservices-plain',
-  },
-  {
-    title: 'docker',
-    devicon: 'devicon-docker-plain',
-  },
-  {
-    title: 'nginx',
-    devicon: 'devicon-nginx-plain',
-  },
-  {
-    title: 'linux',
-    devicon: 'devicon-linux-plain',
-  },
-  {
-    title: 'RoR',
-    devicon: 'devicon-rails-plain',
-  },
-];
-
 const tidbits = [
   'Systems and Network engineer aspiring to solve interesting challenges using software and creative solutions.',
   'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation).',
@@ -172,16 +122,6 @@ const App = React.createClass({
                   );
                 })
               }
-            </div>
-            <div className="four columns">
-              <IconItems
-                title="Skills"
-                items={languageIconItems}
-              />
-              <IconItems
-                items={skillsIconItems}
-              />
-            </div>
           </div>
           <div className="row">
             <Timeline
