@@ -70,12 +70,12 @@ const jobItems = [
   },
 ];
 
-const tidbits = [
-  'Systems and Network engineer aspiring to solve interesting challenges using software and creative solutions.',
+const resumeSummary = [
+  'DevOps engineer aspiring to solve interesting challenges using software and creative solutions.',
+  'Interested in scaling large systems using cloud frameworks like AWS and Kubernetes.',
   'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation).',
-  'Automates everything using continuous integration tools like Jenkins.',
-  'Experienced with monitoring and metrics (Nagios, Zabbix, Cloudwatch).',
-  'Familiar with troubleshooting networking issues and navigating through large codebases.',
+  'Automates everything using CI/CD tools and scripting.',
+  'Experienced with monitoring and metrics (Prometheus, Nagios, Zabbix, Cloudwatch).',
 ];
 
 const App = React.createClass({
@@ -107,14 +107,13 @@ const App = React.createClass({
             </div>
           </div>
           <div className="row">
-            <div className="eight columns">
               <SectionHeader
                 title="Summary"
               />
               {
-                tidbits.map(t => {
+                resumeSummary.map(t => {
                   return (
-                    <div className="row tidbit">
+                    <div className="row resumeSummary">
                       <div className="twelve columns">
                         {t}
                       </div>
