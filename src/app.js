@@ -39,12 +39,12 @@ const jobItems = [
     summary: [
       'Managed deployment of our initial saas infrastructure to production, partnered with large telecom carriers (Sprint, Telefonica, Sapphire).',
       'Reduced time to run build-verification by running builds in parallel and using docker to deploy.',
-      'Simplified deployment of AWS stack using Cloudformation/terraform.',
+      'Simplified deployment of AWS stack using Cloudformation/Terraform.',
     ]
   },
   {
     title: 'Podomatic, Inc',
-    subtitle: 'Unix/Linux Operations Engineer',
+    subtitle: 'Operations Engineer',
     detail: Location.SF,
     startDate: 'March 2014',
     endDate: 'May 2015',
@@ -123,8 +123,10 @@ const App = React.createClass({
               }
           </div>
           <div className="row">
-            <Timeline
+            <SectionHeader
               title="Experience"
+            />
+            <Timeline
               items={jobItems}
             />
           </div>
@@ -160,10 +162,6 @@ const Timeline = React.createClass({
   render: function() {
     return (
       <div className="timeline">
-        <TimelineHeader
-          title={this.props.title}
-          faIcon={this.props.headerIcon}
-        />
         <div className="timeline-items">
           <div className="page-line"></div>
           {this.props.items.map(item => {
@@ -179,22 +177,16 @@ const TimelineItem = React.createClass({
   render: function() {
     return (
       <div className="row timeline-item">
-        <div className="three columns">
-          <div className="item-dates">
-            <div>{this.props.item.startDate} -</div>
-            <div>{this.props.item.endDate}</div>
-          </div>
-        </div>
         <div className="one column">
           <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
         </div>
-        <div className="seven columns">
+        <div className="ten columns">
+          <div className="item-dates">
+            {this.props.item.startDate} - {this.props.item.endDate}
+          </div>
           <div className="item-info">
             <div className="item-title">
-              {this.props.item.title}
-            </div>
-            <div className="item-subtitle">
-              {this.props.item.subtitle}
+              {this.props.item.subtitle} at {this.props.item.title}
             </div>
             <div className="item-detail">
               {this.props.item.detail}
@@ -219,26 +211,11 @@ const SectionHeader = React.createClass({
   render: function() {
     return (
       <div className="row">
-        <div className="three columns">
-          <div className="invisible">Filler</div>
-        </div>
         <div className="two columns">
           <div className="invisible">Filler</div>
         </div>
         <div className="section-header-title">
           {this.props.title}
-        </div>
-      </div>
-    );
-  }
-});
-
-const TimelineHeader = React.createClass({
-  render: function() {
-    return (
-      <div className="row">
-        <div className="eight columns">
-          <SectionHeader {...this.props} />
         </div>
       </div>
     );
