@@ -1,8 +1,12 @@
 'use strict';
 
 const Personal = {
-  Name: 'Jason Hoang'
-}
+  Name: 'Jason Hoang',
+  Phone: '415-494-1453',
+  Email: 'jasonhoang7@gmail.com',
+  LinkedIn: 'linkedin.com/in/the-jason-hoang',
+  Github: 'github.com/jaycenh7',
+};
 
 const Location = {
   SF: 'San Francisco, CA',
@@ -132,20 +136,23 @@ const App = React.createClass({
           <div className="row">
             <div className="seven columns">
               <HeroTitle
-                title="Jason Hoang"
+                title={Personal.Name}
                 subtitle="build smarter, build faster"
                 avatarSrc="/src/img/avatar.jpeg"
               />
             </div>
             <div className="five columns contact-info">
               <div className="inline-icon-item">
-                <i className="fa fa-mobile fa-fw"></i><span>(415) 494-1453</span>
+                <span>{Personal.Phone}</span><i className="fa fa-mobile fa-fw"></i>
               </div>
               <div className="inline-icon-item">
-                <i className="fa fa-envelope fa-fw"></i><span>jasonhoang7@gmail.com</span>
+                <span>{Personal.Email}</span><i className="fa fa-envelope fa-fw"></i>
               </div>
               <div className="inline-icon-item">
-                <i className="fa fa-github fa-fw"></i><span>github.com/jaycenh7</span>
+                <span>{Personal.LinkedIn}</span><i className="fa fa-linkedin fa-fw"></i>
+              </div>
+              <div className="inline-icon-item">
+                <span>{Personal.Github}</span><i className="fa fa-github fa-fw"></i>
               </div>
             </div>
           </div>
