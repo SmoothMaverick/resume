@@ -4,4 +4,4 @@ install bower components
 
 render page
 
-`python -m SimpleHTTPServer 8000`
+`go run main.go`
