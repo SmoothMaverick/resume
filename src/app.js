@@ -2,10 +2,9 @@
 
 const Personal = {
   Name: 'Jason Hoang',
-  Phone: '415-494-1453',
   Email: 'jasonhoang7@gmail.com',
   LinkedIn: 'linkedin.com/in/the-jason-hoang',
-  Github: 'github.com/jaycenh7',
+  Github: 'github.com/SmoothMaverick'
 };
 
 const Location = {
