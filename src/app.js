@@ -13,6 +13,11 @@ const Location = {
   SanCarlos: 'San Carlos, CA',
 };
 
+const Education = {
+  School: 'University of California, Los Angeles (UCLA)',
+  Degree: 'Bachelor of Science in Microbiology, 2007'
+};
+
 const jobItems = [
   {
     title: 'Education Elements',
@@ -128,6 +133,15 @@ const App = React.createClass({
             <Timeline
               items={jobItems}
             />
+          </div>
+
+          <div className="five columns education">
+            <div className="inline-icon-item">
+              <span>{Education.School}</span><i className="fa fa-fw"></i>
+            </div>
+            <div className="inline-icon-item">
+              <span>{Education.Degree}</span><i className="fa fa-fw"></i>
+            </div>
           </div>
 
           <div className="corner-footer">
