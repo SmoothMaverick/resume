@@ -97,9 +97,6 @@ const App = React.createClass({
             </div>
             <div className="five columns contact-info">
               <div className="inline-icon-item">
-                <span>{Personal.Phone}</span><i className="fa fa-mobile fa-fw"></i>
-              </div>
-              <div className="inline-icon-item">
                 <span>{Personal.Email}</span><i className="fa fa-envelope fa-fw"></i>
               </div>
               <div className="inline-icon-item">
