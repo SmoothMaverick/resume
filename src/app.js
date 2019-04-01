@@ -7,12 +7,6 @@ const Personal = {
   Github: 'github.com/SmoothMaverick'
 };
 
-const Location = {
-  SF: 'San Francisco, CA',
-  RWC: 'Redwood City, CA',
-  SanCarlos: 'San Carlos, CA',
-};
-
 const Education = {
   School: 'University of California, Los Angeles (UCLA)',
   Degree: 'Bachelor of Science in Microbiology, 2007'
@@ -22,7 +16,7 @@ const jobItems = [
   {
     title: 'Education Elements',
     subtitle: 'DevOps Engineer',
-    detail: Location.SanCarlos,
+    detail: 'San Carlos, CA',
     startDate: 'Dec 2016',
     endDate: 'Oct 2017',
     faIcon: 'fa-graduation-cap',
@@ -36,7 +30,7 @@ const jobItems = [
   {
     title: 'Itson, Inc.',
     subtitle: 'DevOps Engineer',
-    detail: Location.RWC,
+    detail: 'Redwood City, CA',
     startDate: 'May 2015',
     endDate: 'Nov 2016',
     faIcon: 'fa-mobile',
@@ -49,7 +43,7 @@ const jobItems = [
   {
     title: 'Podomatic, Inc',
     subtitle: 'Operations Engineer',
-    detail: Location.SF,
+    detail: 'San Francisco, CA',
     startDate: 'March 2014',
     endDate: 'May 2015',
     faIcon: 'fa-music',
@@ -63,7 +57,7 @@ const jobItems = [
   {
     title: 'City College of San Francisco',
     subtitle: 'Assistant Network Technician',
-    detail: Location.SF,
+    detail: 'San Francisco, CA',
     startDate: 'June 2013',
     endDate: 'May 2014',
     faIcon: 'fa-university',
