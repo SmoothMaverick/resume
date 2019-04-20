@@ -14,6 +14,35 @@ const Education = {
 
 const jobItems = [
   {
+    title: 'Kony, Inc',
+    subtitle: 'Software Development Engineer',
+    detail: 'Menlo Park, CA',
+    startDate: 'Oct 2018',
+    endDate: 'present',
+    faIcon: 'fa-usd',
+    summary: [
+      'Continued improving the infrastructure after the acquisition',
+      'Trained a team of 3 in Hyderabad, India to provide remote technical support and perform deployments',
+      'Setup Spinnaker and created pipelines to perform production deployments with a push button',
+      'Setup Helm and created charts so that deployed Kubernetes resources are consistent across environments'
+    ]
+  },
+  {
+    title: 'Pivotus Ventures (acquired by Kony)',
+    subtitle: 'DevOps Engineer',
+    detail: 'Menlo Park, CA',
+    startDate: 'Feb 2018',
+    endDate: 'Oct 2018',
+    faIcon: 'fa-address-book',
+    summary: [
+      'Lead infrastructure-as-code practices with a team that preferred shells scripts and manual proceseses',
+      'Brought consistency and ease of managing more than 10 environments across 3 geographic regions',
+      'Created re-usable Terraform modules for AWS services such as S3, VPC, EC2, EKS, RDS, Elasticache and Lambda functions',
+      'Created tools written in Golang to perform repetitive functions such as checking deployed artifacts for nine projects by their hash values',
+      'Implemented monitoring, logging and security tools unique to applications deployed on Kubernetes',
+    ]
+  },
+  {
     title: 'Education Elements',
     subtitle: 'DevOps Engineer',
     detail: 'San Carlos, CA',
@@ -21,10 +50,12 @@ const jobItems = [
     endDate: 'Oct 2017',
     faIcon: 'fa-graduation-cap',
     summary: [
-      'Managed servers with Salt and Chef, but worked on migrating to Kubernetes and Docker',
-      'Deployed Prometheus for monitoring Kubernetes services',
-      'Developed on-demand deployment for QA environment to reduce AWS costs.',
-      'Reduced AWS costs by 33% within the first 4 months.',
+      'Sole engineer responsible for the entire infrastructure, reported under the VP of Engineering',
+      'Migrated applications deployed on a host server to pods in Kubernetes',
+      'Setup Prometheus for monitoring Kubernetes services',
+      'Developed an on-demand deployment system to increase development speed annd reduce AWS costs',
+      'Reduced AWS costs by 33% within the first 4 months',
+      'Managed servers with Salt and Chef',
     ]
   },
   {
