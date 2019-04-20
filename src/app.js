@@ -92,7 +92,7 @@ const App = React.createClass({
               <HeroTitle
                 title={Personal.Name}
                 subtitle="build smarter, build faster"
-                avatarSrc="/src/img/avatar.jpeg"
+                avatarSrc="/src/img/avatar.jpg"
               />
             </div>
             <div className="five columns contact-info">
