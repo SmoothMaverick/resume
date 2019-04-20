@@ -73,7 +73,7 @@ const jobItems = [
   },
   {
     title: 'Podomatic, Inc',
-    subtitle: 'Operations Engineer',
+    subtitle: 'Software Engineer',
     detail: 'San Francisco, CA',
     startDate: 'March 2014',
     endDate: 'May 2015',
