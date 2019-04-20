@@ -35,9 +35,9 @@ const jobItems = [
     endDate: 'Nov 2016',
     faIcon: 'fa-mobile',
     summary: [
-      'Managed deployment of our initial saas infrastructure to production, partnered with large telecom carriers (Sprint, Telefonica, Sapphire).',
-      'Reduced time to run build-verification by running builds in parallel and using docker to deploy.',
-      'Simplified deployment of AWS stack using Cloudformation/Terraform.',
+      'Managed deployment of our initial saas infrastructure to production, partnered with large telecom carriers (Sprint, Telefonica, Sapphire)',
+      'Reduced time to run build-verification by running builds in parallel and using docker to deploy',
+      'Simplified deployment of AWS stack using Cloudformation/Terraform',
     ]
   },
   {
@@ -48,10 +48,10 @@ const jobItems = [
     endDate: 'May 2015',
     faIcon: 'fa-music',
     summary: [
-      'Created a unified development environment with Vagrant and Puppet.',
-      'Optimized site design using A/B testing with Google Analytics.',
-      'Improved server automation by translating scripts Puppet modules.',
-      'Backend Ruby on Rails development.',
+      'Created a unified development environment with Vagrant and Puppet',
+      'Optimized site design using A/B testing with Google Analytics',
+      'Improved server automation by translating scripts Puppet modules',
+      'Backend Ruby on Rails development',
     ]
   },
   {
@@ -62,22 +62,22 @@ const jobItems = [
     endDate: 'May 2014',
     faIcon: 'fa-university',
     summary: [
-      'Resolved issues with Wifi connections in a timely, professional manner.',
-      'Performed quality control and testing for deployment of latest Meraki WiFi Technology.',
+      'Resolved issues with Wifi connections in a timely, professional manner',
+      'Performed quality control and testing for deployment of latest Meraki WiFi Technology',
     ]
   },
 ];
 
 const resumeSummary = [
-  'DevOps engineer aspiring to solve interesting challenges using software and creative solutions.',
-  'Interested in scaling large systems using cloud frameworks like AWS and Kubernetes.',
-  'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation).',
-  'Automates everything using CI/CD tools and scripting.',
-  'Experienced with monitoring and metrics (Prometheus, Nagios, Zabbix, Cloudwatch).',
+  'DevOps engineer aspiring to solve interesting challenges using software and creative solutions',
+  'Interested in scaling large systems using cloud frameworks like AWS and Kubernetes',
+  'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation)',
+  'Automates everything using CI/CD tools and scripting',
+  'Experienced with monitoring and metrics (Prometheus, Nagios, Zabbix, Cloudwatch)',
 ];
 
 const App = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="page">
         <div className="container">
@@ -102,20 +102,20 @@ const App = React.createClass({
             </div>
           </div>
           <div className="row">
-              <SectionHeader
-                title="Summary"
-              />
-              {
-                resumeSummary.map(t => {
-                  return (
-                    <div className="row resumeSummary">
-                      <div className="twelve columns">
-                        {t}
-                      </div>
+            <SectionHeader
+              title="Summary"
+            />
+            {
+              resumeSummary.map(t => {
+                return (
+                  <div className="row resumeSummary">
+                    <div className="twelve columns">
+                      {t}
                     </div>
-                  );
-                })
-              }
+                  </div>
+                );
+              })
+            }
           </div>
           <div className="row">
             <SectionHeader
@@ -126,12 +126,17 @@ const App = React.createClass({
             />
           </div>
 
-          <div className="five columns education">
-            <div className="inline-icon-item">
-              <span>{Education.School}</span><i className="fa fa-fw"></i>
-            </div>
-            <div className="inline-icon-item">
-              <span>{Education.Degree}</span><i className="fa fa-fw"></i>
+          <div className="row">
+            <SectionHeader
+              title="Education"
+            />
+            <div className="row education strong">
+              <div className="twelve columns school">
+                <strong>{Education.School}</strong>
+              </div>
+              <div className="twelve columns degree">
+                <span>{Education.Degree}</span>
+              </div>
             </div>
           </div>
 
@@ -145,12 +150,12 @@ const App = React.createClass({
 });
 
 const HeroTitle = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="hero-header">
         <div className="row">
           <div className="five columns avatar">
-            <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width"/>
+            <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width" />
           </div>
           <div className="hero-title seven columns">
             <div className="title">{this.props.title}</div>
@@ -163,7 +168,7 @@ const HeroTitle = React.createClass({
 });
 
 const Timeline = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="timeline">
         <div className="timeline-items">
@@ -178,7 +183,7 @@ const Timeline = React.createClass({
 });
 
 const TimelineItem = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="row timeline-item">
         <div className="one column">
@@ -196,13 +201,13 @@ const TimelineItem = React.createClass({
               {this.props.item.detail}
             </div>
             <ul>
-            {this.props.item.summary.map(i => {
-              return (
-                <li className="item-summary">
-                  {i}
-                </li>
-              );
-            })}
+              {this.props.item.summary.map(i => {
+                return (
+                  <li className="item-summary">
+                    {i}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -212,7 +217,7 @@ const TimelineItem = React.createClass({
 });
 
 const SectionHeader = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="row">
         <div className="two columns">
@@ -227,7 +232,7 @@ const SectionHeader = React.createClass({
 });
 
 const TimelineMilestoneIcon = React.createClass({
-  render: function() {
+  render: function () {
     const stackClassName = this.props.isLarge ? "fa-stack fa-lg" : "fa-stack";
 
     return (
@@ -242,7 +247,7 @@ const TimelineMilestoneIcon = React.createClass({
 });
 
 const IconItems = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="icon-items">
         <SectionHeader
@@ -255,7 +260,7 @@ const IconItems = React.createClass({
               <div className="three columns">
                 <IconItem {...item} />
               </div>
-              );
+            );
           })}
         </div>
       </div>
@@ -264,7 +269,7 @@ const IconItems = React.createClass({
 });
 
 const IconItem = React.createClass({
-  render: function() {
+  render: function () {
     return (
       <div className="icon-item">
         <i className={`${this.props.devicon}`}></i>

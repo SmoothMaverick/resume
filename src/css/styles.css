@@ -71,7 +71,7 @@ ul {
 }
 
 .item-dates {
-  font-size: 9pt;
+  font-size: 10pt;
   margin-bottom: 5px;
 }
 
@@ -94,6 +94,7 @@ ul {
 .section-header-title {
   font-family: 'Share', cursive;
   font-size: 20pt;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
   color: #3b4047;
 }
@@ -106,7 +107,7 @@ i {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14pt;
-  margin-bottom: 0.1em;
+  margin-bottom: 0.3em;
 }
 
 .item-detail {
@@ -117,8 +118,8 @@ i {
 }
 
 li.item-summary {
-  margin-top: 0.25em;
-  margin-bottom: 0.25em;
+  margin-top: 0.30em;
+  margin-bottom: 0.30em;
 }
 
 .page-line {
@@ -160,6 +161,11 @@ li.item-summary {
   margin-left: 7.5em;
 }
 
+.education {
+  margin-bottom: 0.5em;
+  margin-left: 7.5em;
+}
+
 .inline-icon-item i {
   vertical-align: middle;
 }
@@ -178,8 +184,8 @@ li.item-summary {
 }
 
 .corner-footer {
+  margin-top: 3em;
   position: absolute;
-  bottom: 0;
   right: 0;
   font-size: 1rem;
   color: #62666b;
