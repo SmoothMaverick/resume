@@ -97,6 +97,19 @@ const jobItems = [
       'Performed quality control and testing for deployment of latest Meraki WiFi Technology',
     ]
   },
+  {
+    title: 'US Navy',
+    subtitle: 'Naval Officer',
+    detail: 'various',
+    startDate: 'Feb 2008',
+    endDate: 'Jul 2012',
+    faIcon: 'fa-ship',
+    summary: [
+      'Volunteered to become an advisor for the Afghan National Civil Order Police (ANCOP), working with their communications officer and intelligence officer in Kandahar, Afghanistan',
+      'Maintained deployment readiness with the San Jose reserve unit',
+      'Joined as a submarine officer but failed to complete training',
+    ]
+  },
 ];
 
 const resumeSummary = [
