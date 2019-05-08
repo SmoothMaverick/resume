@@ -98,6 +98,20 @@ const jobItems = [
     ]
   },
   {
+    title: 'School',
+    subtitle: 'Student',
+    detail: 'various',
+    startDate: 'Jul 2012',
+    endDate: 'June 2013',
+    faIcon: 'fa-university',
+    summary: [
+      'Worked on transitioning from military to civilian workforce',
+      'Took Computer programming and networking classes at City College of San Francisco',
+      'Taught a computer skills class to inmates at the San Francisco County jail',
+      'Completed an internship with the SFPD IT Department',
+    ]
+  },
+  {
     title: 'US Navy',
     subtitle: 'Naval Officer',
     detail: 'various',
@@ -113,11 +127,11 @@ const jobItems = [
 ];
 
 const resumeSummary = [
-  'DevOps engineer aspiring to solve interesting challenges using software and creative solutions',
-  'Interested in scaling large systems using cloud frameworks like AWS and Kubernetes',
-  'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation)',
-  'Automates everything using CI/CD tools and scripting',
-  'Experienced with monitoring and metrics (Prometheus, Nagios, Zabbix, Cloudwatch)',
+  'Software engineer aspiring to solve interesting challenges using code and creative solutions.',
+  'Interested in scaling large systems using cloud platforms and container orchestration frameworks.',
+  'Developed tools to improve productivity with developers and deployments to production systems.',
+  'Automating everything using CI/CD tools and scripting in Golang or Python.',
+  'Provides leadership and best practices to small, focused teams.',
 ];
 
 const App = React.createClass({
