@@ -14,11 +14,24 @@ const Education = {
 
 const jobItems = [
   {
+    title: 'Haighten, LLC',
+    subtitle: 'Consultant',
+    detail: 'San Francisco, CA',
+    startDate: 'Jun 2019',
+    endDate: 'present',
+    faIcon: 'fa-asterisk',
+    summary: [
+      'Providing DevOps services to Ouster, Inc',
+      'Migrate freestyle Jenkins jobs to jenkins-pipelines',
+      'Migrate web app to AppEngine'
+    ]
+  },
+  {
     title: 'Kony, Inc',
     subtitle: 'Software Development Engineer',
     detail: 'Menlo Park, CA',
     startDate: 'Oct 2018',
-    endDate: 'present',
+    endDate: 'Jun 2019',
     faIcon: 'fa-usd',
     summary: [
       'Continued improving the infrastructure after the acquisition',
