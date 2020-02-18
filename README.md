@@ -4,4 +4,4 @@ install bower components
 
 render page
 
-`go run main.go`
+`go run server.go`

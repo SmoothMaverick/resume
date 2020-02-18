@@ -21,9 +21,10 @@ const jobItems = [
     endDate: 'present',
     faIcon: 'fa-asterisk',
     summary: [
-      'Providing DevOps services to Ouster, Inc',
-      'Migrate freestyle Jenkins jobs to jenkins-pipelines',
-      'Migrate web app to AppEngine'
+      'Provide cloud engineering expertise (GCP) to Ouster, Inc',
+      'Implement infrastrucuture-as-code with Jenkins pipelines and Terraform',
+      'Migrate web applications to high scalable and performant App Engine',
+      'Created an IoT vehicle simulator and testing framework',
     ]
   },
   {
@@ -126,8 +127,8 @@ const jobItems = [
 ];
 
 const resumeSummary = [
-  'DevOps engineer aspiring to solve interesting challenges using software and creative solutions',
-  'Interested in scaling large systems using cloud frameworks like AWS and Kubernetes',
+  'DevOps engineer solving scaling challenges on both AWS and GCP',
+  'Interested in infrastructure-as-code and writing software to solve problems',
   'Skilled with configuration management tools (Chef, Puppet, Terraform, Cloudformation)',
   'Automates everything using CI/CD tools and scripting',
   'Experienced with monitoring and metrics (Prometheus, Nagios, Zabbix, Cloudwatch)',
