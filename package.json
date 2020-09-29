@@ -4,7 +4,6 @@
   "description": "Jason's Resume",
   "main": "app.js",
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install",
     "start": "./node_modules/.bin/http-server"
   },
   "repository": {
@@ -15,7 +14,12 @@
   "license": "MIT",
   "homepage": "https://github.com/SmoothMaverick/resume#readme",
   "dependencies": {
-    "bower": "^1.8.8",
-    "http-server": "^0.12.3 "
+    "http-server": "^0.12.3 ",
+    "babel": "^5.8.38",
+    "font-awesome": "^4.6.3",
+    "skeleton-css": "^2.0.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "devicon": "v2.0"
   }
 }
