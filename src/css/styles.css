@@ -67,6 +67,13 @@ ul {
   font-size: 11pt;
   margin-bottom: 10pt;
   margin-left: 50pt;
+  line-height: 1.5;
+}
+
+.skill-item {
+  font-size: 11pt;
+  margin-bottom: 10pt;
+  margin-left: 10pt;
   line-height: 1;
 }
 
@@ -156,12 +163,14 @@ li.item-summary {
   line-height: 1;
 }
 
-.resumeSummary {
+.headline {
+  font-weight: bold;
+  font-size: 12pt;
   margin-bottom: 0.5em;
-  margin-left: 7.5em;
+  margin-left: 7em;
 }
 
-.education {
+.education, .skills {
   margin-bottom: 0.5em;
   margin-left: 7.5em;
 }
@@ -170,7 +179,7 @@ li.item-summary {
   vertical-align: middle;
 }
 
-.contact-info {
+.contact {
   text-align: right;
 }
 
