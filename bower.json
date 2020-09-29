@@ -16,10 +16,10 @@
     "tests"
   ],
   "dependencies": {
-    "babel": "*",
+    "babel": "^5.8.38",
     "font-awesome": "^4.6.3",
     "skeleton": "^2.0.4",
-    "react": "^15.2.1",
-    "devicon": "*"
+    "react": "^15.6.1",
+    "devicon": "v2.0"
   }
 }

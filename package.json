@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Jason's Resume",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "start": "./node_modules/.bin/http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmoothMaverick/resume.git"
+  },
+  "author": "Jason Hoang <jason.hoang@haighten.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/SmoothMaverick/resume#readme",
+  "dependencies": {
+    "bower": "^1.8.8",
+    "http-server": "^0.12.3 "
+  }
+}

@@ -1,7 +1,5 @@
-install bower components
+# Resume
 
-`bower install`
+`npm install`
 
-render page
-
-`go run server.go`
+`npm start`
