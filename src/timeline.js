@@ -8,6 +8,7 @@ const timeline = [
         "faIcon": "fa-asterisk",
         "summary": [
             "Provide cloud engineering expertise to clients",
+            "Built a food-delivery application on iOS and Django"
         ]
     },
     {
