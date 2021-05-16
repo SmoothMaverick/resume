@@ -5,12 +5,11 @@ const App = React.createClass({
     return (
       <div className="page">
         <div className="container">
-          <div className="row">
-            <div className="seven columns">
+          <div className="row headline">
+            <div className="six columns">
               <HeroTitle
                 title={contact.name}
                 subtitle="build smarter, build faster"
-                avatarSrc="/src/img/avatar.jpg"
               />
             </div>
             <ContactInfo
@@ -65,9 +64,6 @@ const HeroTitle = React.createClass({
     return (
       <div className="hero-header">
         <div className="row">
-          <div className="five columns avatar">
-            <img width="122" src={this.props.avatarSrc} alt="Me" className="u-max-full-width" />
-          </div>
           <div className="hero-title seven columns">
             <div className="title">{this.props.title}</div>
             <div className="subtitle">{this.props.subtitle}</div>
@@ -146,6 +142,9 @@ const Timeline = React.createClass({
 
 const TimelineItem = React.createClass({
   render: function () {
+    const fullTitle = `${this.props.item.subtitle} at ${this.props.item.title}`
+    const titleItem = this.props.item.subtitle ? fullTitle : this.props.item.title
+
     return (
       <div className="row timeline-item">
         <div className="one column">
@@ -157,7 +156,7 @@ const TimelineItem = React.createClass({
           </div>
           <div className="item-info">
             <div className="item-title">
-              {this.props.item.subtitle} at {this.props.item.title}
+              {titleItem}
             </div>
             <div className="item-detail">
               {this.props.item.detail}
