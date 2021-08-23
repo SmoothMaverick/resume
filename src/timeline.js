@@ -24,7 +24,7 @@ const timeline = [
         ]
     },
     {
-        "title": "New Context",
+        "title": "Copado",
         "subtitle": "Senior DevOps Engineer (contract)",
         "detail": "San Francisco, CA",
         "startDate": "Mar 2019",
