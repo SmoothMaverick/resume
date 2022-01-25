@@ -1,10 +1,36 @@
 const timeline = [
     {
+        "title": "Capital Technology Group",
+        "subtitle": "Systems Developer",
+        "detail": "Washington, DC (remote)",
+        "startDate": "Dec 2021",
+        "endDate": "present",
+        "faIcon": "fa-asterisk",
+        "summary": [
+            "Building out a frontend React application for the Department of Homeland Security",
+        ]
+    },
+    {
+        "title": "Copado",
+        "subtitle": "Senior DevOps Engineer (contract)",
+        "detail": "San Francisco, CA",
+        "startDate": "Mar 2019",
+        "endDate": "present",
+        "faIcon": "fa-asterisk",
+        "summary": [
+            "Joined as an independent contractor, worked on as needed basis.",
+            "Created an integration with Hashicorp's Vault and Venafi's Trusted Protection Platform.",
+            "Build services and infrastructure for applications running in Kubernetes",
+            "Created tooling to allow secrets (e.g. passwords, certificates) to be easily shared between the two systems.",
+            "Apply Lean Security principles to support client engagements in infrastructure automation and security architecture.",
+        ]
+    },
+    {
         "title": "Intermission",
         "subtitle": "",
         "detail": "",
         "startDate": "Jun 2020",
-        "endDate": "present",
+        "endDate": "Dec 2021",
         "faIcon": "fa-asterisk",
         "summary": [
             "Took a gap year and bunkered down for Covid-19.",
@@ -21,20 +47,6 @@ const timeline = [
         "faIcon": "fa-asterisk",
         "summary": [
             "Personal LLC for contracting.",
-        ]
-    },
-    {
-        "title": "Copado",
-        "subtitle": "Senior DevOps Engineer (contract)",
-        "detail": "San Francisco, CA",
-        "startDate": "Mar 2019",
-        "endDate": "Jun 2020",
-        "faIcon": "fa-asterisk",
-        "summary": [
-            "Joined as an independent contractor, worked on as needed basis.",
-            "Created an integration with Hashicorp's Vault and Venafi's Trusted Protection Platform.",
-            "Created tooling to allow secrets (e.g. passwords, certificates) to be easily shared between the two systems.",
-            "Apply Lean Security principles to support client engagements in infrastructure automation and security architecture.",
         ]
     },
     {

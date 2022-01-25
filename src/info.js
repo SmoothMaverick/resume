@@ -13,10 +13,8 @@ const education = {
 const headline = "Aspiring to solve challenges to grow businesses using software and creative solutions.";
 
 const skills = [
-  "Languages: Python, Swift, Golang, Ruby",
+  "Languages: Python, Javascript, Swift",
   "Cloud: AWS, Google Cloud",
-  "Containers: Docker, Kubernetes",
-  "CICD: Jenkins, CircleCI, Spinnaker",
   "Configuration Management: Terraform, Puppet, Chef",
   "Operating systems: Linux, iOS",
 ]
