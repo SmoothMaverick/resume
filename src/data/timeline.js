@@ -1,41 +1,26 @@
 export const timeline = [
   {
+    title: 'Self-Directed Learning & Projects',
+    subtitle: '',
+    detail: 'remote',
+    startDate: 'March 2024',
+    endDate: 'present',
+    faIcon: 'fa-rocket',
+    summary: [
+      'Actively expanding expertise in AI technologies, including hands-on experience with ChatGPT, Gemini, Copilot, and running local models using Ollama.',
+      'Completed online courses in AI and 3D modeling (Blender, Autodesk Fusion) to broaden technical skillsets.',
+    ]
+  },
+  {
     title: 'Capital Technology Group',
     subtitle: 'Systems Developer',
     detail: 'Washington, DC (remote)',
     startDate: 'Dec 2021',
-    endDate: 'present',
+    endDate: 'Feb 2024',
     faIcon: 'fa-asterisk',
     summary: [
-      'Building out a frontend React application for the Department of Homeland Security',
-    ]
-  },
-  {
-    title: 'Copado',
-    subtitle: 'Senior DevOps Engineer (contract)',
-    detail: 'San Francisco, CA',
-    startDate: 'Mar 2019',
-    endDate: 'present',
-    faIcon: 'fa-asterisk',
-    summary: [
-      'Joined as an independent contractor, worked on as needed basis.',
-      'Created an integration with Hashicorp\'s Vault and Venafi\'s Trusted Protection Platform.',
-      'Build services and infrastructure for applications running in Kubernetes',
-      'Created tooling to allow secrets (e.g. passwords, certificates) to be easily shared between the two systems.',
-      'Apply Lean Security principles to support client engagements in infrastructure automation and security architecture.',
-    ]
-  },
-  {
-    title: 'Intermission',
-    subtitle: '',
-    detail: '',
-    startDate: 'Jun 2020',
-    endDate: 'Dec 2021',
-    faIcon: 'fa-asterisk',
-    summary: [
-      'Took a gap year and bunkered down for Covid-19.',
-      'Used the time to think about the next step in my career, study for interviews, and spend time with family.',
-      'Learned iOS development and released an app to the App Store.',
+      'Developed and enhanced a front-end React application for the Department of Homeland Security, focusing on user interface improvements and application performance.',
+      'Built React components used across multiple applications, such as table, form, auto-complete, date-picker',
     ]
   },
   {
@@ -43,10 +28,24 @@ export const timeline = [
     subtitle: 'Software Engineer',
     detail: 'San Francisco, CA',
     startDate: 'Jun 2019',
-    endDate: 'present',
+    endDate: 'Feb 2024',
     faIcon: 'fa-asterisk',
     summary: [
-      'Personal LLC for contracting.',
+      'Personal LLC for software development and cloud engineering contracts.'
+    ]
+  },
+  {
+    title: 'Copado',
+    subtitle: 'Senior DevOps Engineer (contract)',
+    detail: 'San Francisco, CA',
+    startDate: 'Mar 2020',
+    endDate: 'Nov 2021',
+    faIcon: 'fa-asterisk',
+    summary: [
+      'Engineered services and infrastructure for applications within Kubernetes environments.',
+      'Designed and implemented an integration between Hashicorp Vault and Venafi Trusted Protection Platform.',
+      'Developed tooling to facilitate secure sharing of secrets (passwords, certificates) between systems.',
+      'Applied Lean Security principles to infrastructure automation and security architecture for client engagements.'
     ]
   },
   {
@@ -57,13 +56,23 @@ export const timeline = [
     endDate: 'Apr 2020',
     faIcon: 'fa-asterisk',
     summary: [
-      'Joined Ouster to migrate applications to Kubernetes and build the CICD pipeline.',
-      'Created a scalable simulator for the sensor software.',
-      'Deployed as a Kubernetes pod, this would process pre-loaded data, push to the cloud and act as a moving vehicle on the web application.',
-      'Support cloud services such as Kubernetes, App Engine, Big Query, Storage, IoT, Dataflow and Cloud Functions.',
-      'Provide web application support running on Flask and Python.',
-      'Improve deployments using Helm templates for Kubernetes.',
-      'Implement infrastructure-as-code with Terraform.'
+      'Provided web application support for systems running on Flask and Python.',
+      'Migrated applications to Kubernetes and built the CI/CD pipeline.',
+      'Created a scalable sensor software simulator, deployed as a Kubernetes pod, which processed pre-loaded data and interacted with a web application.',
+      'Supported cloud services including Kubernetes, App Engine, Big Query, Storage, IoT, Dataflow, and Cloud Functions.',
+      'Improved automation of deployments using Helm templates for Kubernetes.',
+      'Implemented infrastructure-as-code with Terraform.'
+    ]
+  }, {
+    title: 'Intermission',
+    subtitle: '',
+    detail: '',
+    startDate: 'Jun 2020',
+    endDate: 'Dec 2021',
+    faIcon: 'fa-asterisk',
+    summary: [
+      'Undertook a planned career intermission for professional development, interview preparation, and family time.',
+      'Learned iOS development and successfully released an application to the App Store. '
     ]
   },
   {
@@ -74,11 +83,10 @@ export const timeline = [
     endDate: 'Jun 2019',
     faIcon: 'fa-usd',
     summary: [
-      'Continued efforts from Pivotus Ventures after the acquisition.',
-      'Setup Spinnaker to coordinate disjointed jobs and perform production deployments with a push button.',
-      'Continued improving the infrastructure after the acquisition.',
-      'Trained a team of 3 in Hyderabad, India to provide remote technical support and perform deployments.',
-      'Setup Helm and created charts so that deployed Kubernetes resources are consistent across environments.'
+      'Continued infrastructure development and improvement efforts post-acquisition of Pivotus Ventures.',
+      'Set up Spinnaker for streamlined production deployments.',
+      'Established Helm and created charts for consistent Kubernetes resource deployment across environments.',
+      'Trained a team of 3 in Hyderabad, India, for remote technical support and deployments.'
     ]
   },
   {
@@ -89,12 +97,11 @@ export const timeline = [
     endDate: 'Oct 2018',
     faIcon: 'fa-address-book',
     summary: [
-      'Joined Pivotus to build scale their MVP to a global product.',
-      'Lead infrastructure-as-code practices with a team that preferred shells scripts and manual proceseses.',
-      'Brought consistency and ease of managing more than 10 environments across 3 geographic regions.',
-      'Created re-usable Terraform modules for AWS services such as S3, VPC, EC2, EKS, RDS, Elasticache and Lambda functions.',
-      'Created tools written in Golang to perform repetitive functions such as checking deployed artifacts for nine projects by their hash values.',
-      'Implemented monitoring, logging and security tools unique to applications deployed on Kubernetes.'
+      'Led infrastructure-as-code initiatives, transitioning the team from shell scripts and manual processes.',
+      'Scaled MVP to a global product, ensuring consistency across 10+ environments in 3 geographic regions.',
+      'Created reusable Terraform modules for AWS services (S3, VPC, EC2, EKS, RDS, Elasticache, Lambda).',
+      'Developed Golang tools for operational efficiency, such as checking deployed artifacts.',
+      'Implemented Kubernetes-specific monitoring, logging, and security tools.'
     ]
   },
   {
@@ -105,13 +112,11 @@ export const timeline = [
     endDate: 'Oct 2017',
     faIcon: 'fa-graduation-cap',
     summary: [
-      'Joined Education Elements in my first role as the lead DevOps Engineer.',
-      'Sole engineer responsible for the entire infrastructure, reported under the VP of Engineering.',
-      'Migrated applications deployed on a host server to pods in Kubernetes.',
-      'Setup Prometheus for monitoring Kubernetes services.',
-      'Developed an on-demand deployment system to increase development speed annd reduce AWS costs.',
-      'Reduced AWS costs by 33% within the first 4 months.',
-      'Managed servers with Salt and Chef.'
+      'As the sole DevOps Engineer, managed the entire infrastructure, reporting to the VP of Engineering.',
+      'Migrated host server-deployed applications to Kubernetes pods.',
+      'Implemented an on-demand deployment system, increasing development speed and reducing AWS costs by 33% within 4 months.',
+      'Set up Prometheus for Kubernetes service monitoring.',
+      'Managed servers using Salt and Chef.'
     ]
   },
   {
@@ -122,10 +127,9 @@ export const timeline = [
     endDate: 'Nov 2016',
     faIcon: 'fa-mobile',
     summary: [
-      'Joined Itson to scale their MVP to a mature product.',
-      'Managed deployment of our initial saas infrastructure to production, partnered with large telecom carriers (Sprint, Telefonica, Sapphire).',
-      'Reduced time to run build-verification by running builds in parallel and using docker to deploy.',
-      'Simplified deployment of AWS stack using Cloudformation/Terraform.'
+      'Managed the deployment of initial SaaS infrastructure to production, partnering with major telecom carriers (Sprint, Telefonica, Sapphire).',
+      'Reduced build-verification time by parallelizing builds and utilizing Docker for deployment.',
+      'Simplified AWS stack deployment using CloudFormation and Terraform.'
     ]
   },
   {
@@ -136,23 +140,10 @@ export const timeline = [
     endDate: 'May 2015',
     faIcon: 'fa-music',
     summary: [
-      'Started as an intern and was offered a job as a software engineer.',
-      'Created a unified development environment with Vagrant and Puppet.',
-      'Optimized site design using A/B testing with Google Analytics.',
-      'Improved server automation by translating scripts Puppet modules.',
-      'Backend Ruby on Rails development.'
-    ]
-  },
-  {
-    title: 'City College of San Francisco',
-    subtitle: 'Assistant Network Technician',
-    detail: 'San Francisco, CA',
-    startDate: 'June 2013',
-    endDate: 'May 2014',
-    faIcon: 'fa-university',
-    summary: [
-      'Resolved issues with Wifi connections in a timely, professional manner.',
-      'Performed quality control and testing for deployment of latest Meraki WiFi Technology.'
+      'Developed backend features using Ruby on Rails.',
+      'Optimized site design through A/B testing with Google Analytics.',
+      'Created a unified development environment using Vagrant and Puppet.',
+      'Improved server automation by translating scripts into Puppet modules.'
     ]
   },
   {

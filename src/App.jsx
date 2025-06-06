@@ -5,7 +5,7 @@ import './index.css';
 import './styles.css';
 import "./data/info.js";
 import { timeline } from "./data/timeline.js";
-import { contact, education, headline, skills } from './data/info';
+import { contact, education, summary, skills } from './data/info';
 
 const App = () => (
   <div className="page">
@@ -21,12 +21,9 @@ const App = () => (
           email={contact.email}
           linkedin={contact.linkedin}
           github={contact.github}
+          website={contact.website}
         />
-      </div>
-      <div className="row headline">
-        <div className="twelve columns">
-          {headline}
-        </div>
+        <Summary summary={summary} />
       </div>
       <div className="row">
         <SectionHeader title="Skills" />
@@ -61,7 +58,13 @@ const HeroTitle = ({ title, subtitle }) => (
   </div>
 );
 
-const ContactInfo = ({ email, linkedin, github }) =>
+const Summary = ({ summary }) => (
+  <div className="twelve columns">
+    {summary.join(' ')}
+  </div>
+)
+
+const ContactInfo = ({ email, linkedin, github, website }) =>
 (
   <div className="five columns contact">
     <div className="inline-icon-item">
@@ -72,6 +75,9 @@ const ContactInfo = ({ email, linkedin, github }) =>
     </div>
     <div className="inline-icon-item">
       <span>{github}</span><i className="fa fa-github fa-fw"></i>
+    </div>
+    <div className="inline-icon-item">
+      <span>{website}</span><i className="fa fa-brands fa-font-awesome"></i>
     </div>
   </div>
 );
