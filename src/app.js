@@ -158,26 +158,5 @@ const TimelineMilestoneIcon = ({ faIcon, isLarge }) => {
   );
 }
 
-const IconItems = ({ title, faIcon, items }) =>
-(
-  <div className="icon-items">
-    <SectionHeader title={title} faIcon={faIcon} />
-    <div className="row">
-      {items.map(item => (
-        <div className="three columns" key={item.title}>
-          <IconItem {...item} />
-        </div>
-      ))}
-    </div>
-  </div>
-);
-
-const IconItem = ({ devicon, title }) => (
-  <div className="icon-item">
-    <i className={`${devicon}`}></i>
-    <div className="title">{title}</div>
-  </div>
-);
-
 const root = ReactDOM.createRoot(document.getElementById('content'));
 root.render(<App />);
