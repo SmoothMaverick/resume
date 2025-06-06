@@ -1,0 +1,201 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Share:400i,700';
+
+@page {
+  size: letter;
+}
+
+html body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt;
+  color: #3b4047;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin-bottom: 1.5rem;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.page-wrapper {
+  position: relative;
+  width: 8.5in;
+  height: 10in;
+  margin: 0;
+}
+
+.page {
+  position: absolute;
+  top: 20px; right: 0; bottom:0; left: -40px;
+  margin: auto;
+}
+
+.page > .container {
+  width: 100%;
+}
+
+.hero-header {
+  font-family: 'Share', cursive;
+  margin-bottom: 1em;
+  color: #3b4047;
+}
+
+.hero-header .avatar {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.hero-title > .title {
+  font-size: 50pt;
+  line-height: 48pt;
+}
+
+.hero-title > .subtitle {
+  line-height: 2;
+  font-size: 14pt;
+  font-style: italic;
+  font-weight: normal;
+  color: #6B6B69;
+}
+
+.timeline-item {
+  font-size: 11pt;
+  margin-bottom: 10pt;
+  margin-left: 50pt;
+  line-height: 1.5;
+}
+
+.skill-item {
+  font-size: 11pt;
+  margin-bottom: 10pt;
+  margin-left: 10pt;
+  line-height: 1;
+}
+
+.item-dates {
+  font-size: 10pt;
+  margin-bottom: 5px;
+}
+
+.timeline {
+  margin-bottom: 1em;
+}
+
+.timeline-items {
+  position: relative;
+}
+
+.timeline-milestone-icon {
+  position: relative;
+  background: white;
+  margin-top: -4px;
+  margin-left: 20px;
+  padding: 2px 0;
+}
+
+.section-header-title {
+  font-family: 'Share', cursive;
+  font-size: 20pt;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #3b4047;
+}
+
+i {
+  color: #3b4047;
+}
+
+.item-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 0.3em;
+}
+
+.item-detail {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 9pt;
+  color: #62666b;
+}
+
+li.item-summary {
+  margin-top: 0.30em;
+  margin-bottom: 0.30em;
+}
+
+.page-line {
+  top: 1em;
+  bottom: 2em;
+  left: 100px;
+  position: absolute;
+  border-left: 3px solid #8a8b8a;
+}
+
+.icon-item {
+  text-align: center;
+}
+
+.icon-items {
+  margin-bottom: 1em;
+}
+
+/* Allow wrapping */
+.icon-items > .row .columns:nth-child(5n+0) {
+  margin-left: 0;
+}
+
+.icon-items > .row .columns:nth-child(n+5) {
+  margin-top: 1em;
+}
+
+.icon-item i {
+  font-size: 1.5em;
+}
+
+.icon-item > .title {
+  font-size: 10pt;
+  line-height: 1;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 0.5em;
+  margin-left: 7em;
+}
+
+.education, .skills {
+  margin-bottom: 0.5em;
+  margin-left: 7.5em;
+}
+
+.inline-icon-item i {
+  vertical-align: middle;
+}
+
+.contact {
+  text-align: right;
+}
+
+.inline-icon-item {
+  color: #6B6B69;
+}
+
+.inline-icon-item > span {
+  margin-left: 0.5em;
+  font-size: 10pt;
+}
+
+.corner-footer {
+  margin-top: 3em;
+  position: absolute;
+  right: 0;
+  font-size: 1rem;
+  color: #62666b;
+}

@@ -1,25 +1,30 @@
 {
-  "name": "resume",
-  "version": "1.0.0",
-  "description": "Jason's Resume",
-  "main": "app.js",
+  "name": "resume-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "./node_modules/.bin/http-server"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SmoothMaverick/resume.git"
-  },
-  "author": "Jason Hoang <jason.hoang@haighten.com>",
-  "license": "MIT",
-  "homepage": "https://github.com/SmoothMaverick/resume#readme",
   "dependencies": {
-    "http-server": "^14.1.1",
-    "babel": "^5.8.38",
+    "devicon": "^2.16.0",
     "font-awesome": "^4.7.0",
-    "skeleton-css": "^2.0.4",
-    "react": "^18.3.0",
-    "react-dom": "^18.3.0",
-    "devicon": "^2.16.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "skeleton-css": "^2.0.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
   }
 }

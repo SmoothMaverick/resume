@@ -1,4 +1,11 @@
-'use strict';
+import 'font-awesome/css/font-awesome.min.css';
+import 'skeleton-css/css/skeleton.css';
+import 'devicon/devicon.min.css';
+import './index.css';
+import './styles.css';
+import "./data/info.js";
+import { timeline } from "./data/timeline.js";
+import { contact, education, headline, skills } from './data/info';
 
 const App = () => (
   <div className="page">
@@ -158,5 +165,4 @@ const TimelineMilestoneIcon = ({ faIcon, isLarge }) => {
   );
 }
 
-const root = ReactDOM.createRoot(document.getElementById('content'));
-root.render(<App />);
+export default App

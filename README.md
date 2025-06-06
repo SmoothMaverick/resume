@@ -1,5 +1,6 @@
 # Resume
 
-`npm install`
+## Quickstart
 
-`npm start`
+1. `npm install`
+2. `npm run dev`

@@ -1,4 +1,4 @@
-const timeline = [
+export const timeline = [
   {
     title: 'Capital Technology Group',
     subtitle: 'Systems Developer',
