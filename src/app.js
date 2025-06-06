@@ -1,246 +1,183 @@
 'use strict';
 
-const App = React.createClass({
-  render: function () {
-    return (
-      <div className="page">
-        <div className="container">
-          <div className="row headline">
-            <div className="six columns">
-              <HeroTitle
-                title={contact.name}
-                subtitle="build smarter, build faster"
-              />
-            </div>
-            <ContactInfo
-              email={contact.email}
-              linkedin={contact.linkedin}
-              github={contact.github}
-            />
-          </div>
-          <div className="row headline">
-            <div className="twelve columns">
-              {headline}
-            </div>
-          </div>
-          <div className="row">
-            <SectionHeader
-              title="Skills"
-            />
-            <SkillsInfo
-              items={skills}
-            />
-          </div>
-          <div className="row">
-            <SectionHeader
-              title="Experience"
-            />
-            <Timeline
-              items={timeline}
-            />
-          </div>
-
-          <div className="row">
-            <SectionHeader
-              title="Education"
-            />
-            <EducationInfo
-              school={education.schoo}
-              degree={education.degree}
-            />
-          </div>
-
-          <div className="corner-footer">
-            I <i className="fa fa-heart-o"></i> <i className="devicon-vim-plain"></i>
-          </div>
+const App = () => (
+  <div className="page">
+    <div className="container">
+      <div className="row headline">
+        <div className="six columns">
+          <HeroTitle
+            title={contact.name}
+            subtitle="build smarter, build faster"
+          />
         </div>
-      </div>
-    );
-  }
-});
-
-const HeroTitle = React.createClass({
-  render: function () {
-    return (
-      <div className="hero-header">
-        <div className="row">
-          <div className="hero-title seven columns">
-            <div className="title">{this.props.title}</div>
-            <div className="subtitle">{this.props.subtitle}</div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-});
-
-const ContactInfo = React.createClass({
-  render: function () {
-    return (
-      <div className="five columns contact">
-        <div className="inline-icon-item">
-          <span>{this.props.email}</span><i className="fa fa-envelope fa-fw"></i>
-        </div>
-        <div className="inline-icon-item">
-          <span>{this.props.linkedin}</span><i className="fa fa-linkedin fa-fw"></i>
-        </div>
-        <div className="inline-icon-item">
-          <span>{this.props.github}</span><i className="fa fa-github fa-fw"></i>
-        </div>
-      </div>
-    )
-  }
-});
-
-const SkillsInfo = React.createClass({
-  render: function () {
-    return (
-      <div className="row skills">
-        <ul>
-          {this.props.items.map(item => {
-            return (
-              <li key={item} className="skill-item">
-                {item}
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-    )
-  }
-});
-
-const EducationInfo = React.createClass({
-  render: function () {
-    return (
-      <div className="row education strong">
-        <div className="twelve columns school">
-          <strong>{this.props.school}</strong>
-        </div>
-        <div className="twelve columns degree">
-          <span>{this.props.degree}</span>
-        </div>
-      </div>
-    )
-  }
-});
-
-const Timeline = React.createClass({
-  render: function () {
-    return (
-      <div className="timeline">
-        <div className="timeline-items">
-          <div className="page-line"></div>
-          {this.props.items.map(item => {
-            return <TimelineItem key={item.title} item={item} />
-          })}
-        </div>
-      </div>
-    );
-  }
-});
-
-const TimelineItem = React.createClass({
-  render: function () {
-    const fullTitle = `${this.props.item.subtitle} at ${this.props.item.title}`
-    const titleItem = this.props.item.subtitle ? fullTitle : this.props.item.title
-
-    return (
-      <div className="row timeline-item">
-        <div className="one column">
-          <TimelineMilestoneIcon faIcon={this.props.item.faIcon} />
-        </div>
-        <div className="ten columns">
-          <div className="item-dates">
-            {this.props.item.startDate} - {this.props.item.endDate}
-          </div>
-          <div className="item-info">
-            <div className="item-title">
-              {titleItem}
-            </div>
-            <div className="item-detail">
-              {this.props.item.detail}
-            </div>
-            <ul>
-              {this.props.item.summary.map(item => {
-                return (
-                  <li key={item} className="item-summary">
-                    {item}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-      </div>
-    );
-  }
-});
-
-const SectionHeader = React.createClass({
-  render: function () {
-    return (
-      <div className="row">
-        <div className="two columns">
-          <div className="invisible">Filler</div>
-        </div>
-        <div className="section-header-title">
-          {this.props.title}
-        </div>
-      </div>
-    );
-  }
-});
-
-const TimelineMilestoneIcon = React.createClass({
-  render: function () {
-    const stackClassName = this.props.isLarge ? "fa-stack fa-lg" : "fa-stack";
-
-    return (
-      <div className="timeline-milestone-icon">
-        <span className={stackClassName}>
-          <i className="fa fa-circle fa-stack-2x"></i>
-          <i className={`fa ${this.props.faIcon} fa-stack-1x fa-inverse`}></i>
-        </span>
-      </div>
-    );
-  }
-});
-
-const IconItems = React.createClass({
-  render: function () {
-    return (
-      <div className="icon-items">
-        <SectionHeader
-          title={this.props.title}
-          faIcon={this.props.faIcon}
+        <ContactInfo
+          email={contact.email}
+          linkedin={contact.linkedin}
+          github={contact.github}
         />
-        <div className="row">
-          {this.props.items.map(item => {
-            return (
-              <div className="three columns">
-                <IconItem {...item} />
-              </div>
-            );
-          })}
+      </div>
+      <div className="row headline">
+        <div className="twelve columns">
+          {headline}
         </div>
       </div>
-    );
-  }
-});
-
-const IconItem = React.createClass({
-  render: function () {
-    return (
-      <div className="icon-item">
-        <i className={`${this.props.devicon}`}></i>
-        <div className="title">{this.props.title}</div>
+      <div className="row">
+        <SectionHeader title="Skills" />
+        <SkillsInfo items={skills} />
       </div>
-    );
-  }
-});
-
-ReactDOM.render(
-  <App />,
-  document.getElementById('content')
+      <div className="row">
+        <SectionHeader title="Experience" />
+        <Timeline items={timeline} />
+      </div>
+      <div className="row">
+        <SectionHeader title="Education" />
+        <EducationInfo
+          school={education.schoo}
+          degree={education.degree}
+        />
+      </div>
+      <div className="corner-footer">
+        I <i className="fa fa-heart-o"></i> <i className="devicon-vim-plain"></i>
+      </div>
+    </div>
+  </div>
 );
+
+const HeroTitle = ({ title, subtitle }) => (
+  <div className="hero-header">
+    <div className="row">
+      <div className="hero-title seven columns">
+        <div className="title">{title}</div>
+        <div className="subtitle">{subtitle}</div>
+      </div>
+    </div>
+  </div>
+);
+
+const ContactInfo = ({ email, linkedin, github }) =>
+(
+  <div className="five columns contact">
+    <div className="inline-icon-item">
+      <span>{email}</span><i className="fa fa-envelope fa-fw"></i>
+    </div>
+    <div className="inline-icon-item">
+      <span>{linkedin}</span><i className="fa fa-linkedin fa-fw"></i>
+    </div>
+    <div className="inline-icon-item">
+      <span>{github}</span><i className="fa fa-github fa-fw"></i>
+    </div>
+  </div>
+);
+
+const SkillsInfo = ({ items }) =>
+(
+  <div className="row skills">
+    <ul>
+      {items.map(item => (
+        <li key={item} className="skill-item">
+          {item}
+        </li>
+      ))}
+    </ul>
+  </div>
+);
+
+const EducationInfo = ({ school, degree }) =>
+(
+  <div className="row education strong">
+    <div className="twelve columns school">
+      <strong>{school}</strong>
+    </div>
+    <div className="twelve columns degree">
+      <span>{degree}</span>
+    </div>
+  </div>
+);
+
+const Timeline = ({ items }) => (
+  <div className="timeline">
+    <div className="timeline-items">
+      <div className="page-line"></div>
+      {items.map(item => (
+        <TimelineItem key={item.title} item={item} />
+      ))}
+    </div>
+  </div>
+);
+
+const TimelineItem = ({ item }) => {
+  const fullTitle = `${item.subtitle} at ${item.title}`;
+  const titleItem = item.subtitle ? fullTitle : item.title;
+
+  return (
+    <div className="row timeline-item">
+      <div className="one column">
+        <TimelineMilestoneIcon faIcon={item.faIcon} />
+      </div>
+      <div className="ten columns">
+        <div className="item-dates">
+          {item.startDate} - {item.endDate}
+        </div>
+        <div className="item-info">
+          <div className="item-title">{titleItem}</div>
+          <div className="item-detail">{item.detail}</div>
+          <ul>
+            {item.summary.map(summaryItem => (
+              <li key={summaryItem} className="item-summary">
+                {summaryItem}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const SectionHeader = ({ title }) =>
+(
+  <div className="row">
+    <div className="two columns">
+      <div className="invisible">Filler</div>
+    </div>
+    <div className="section-header-title">
+      {title}
+    </div>
+  </div>
+);
+
+const TimelineMilestoneIcon = ({ faIcon, isLarge }) => {
+  const stackClassName = isLarge ? "fa-stack fa-lg" : "fa-stack";
+  return (
+    <div className="timeline-milestone-icon">
+      <span className={stackClassName}>
+        <i className="fa fa-circle fa-stack-2x"></i>
+        <i className={`fa ${faIcon} fa-stack-1x fa-inverse`}></i>
+      </span>
+    </div>
+  );
+}
+
+const IconItems = ({ title, faIcon, items }) =>
+(
+  <div className="icon-items">
+    <SectionHeader title={title} faIcon={faIcon} />
+    <div className="row">
+      {items.map(item => (
+        <div className="three columns" key={item.title}>
+          <IconItem {...item} />
+        </div>
+      ))}
+    </div>
+  </div>
+);
+
+const IconItem = ({ devicon, title }) => (
+  <div className="icon-item">
+    <i className={`${devicon}`}></i>
+    <div className="title">{title}</div>
+  </div>
+);
+
+const root = ReactDOM.createRoot(document.getElementById('content'));
+root.render(<App />);
