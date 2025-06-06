@@ -99,7 +99,7 @@ const SkillsInfo = React.createClass({
         <ul>
           {this.props.items.map(item => {
             return (
-              <li className="skill-item">
+              <li key={item} className="skill-item">
                 {item}
               </li>
             )
@@ -132,7 +132,7 @@ const Timeline = React.createClass({
         <div className="timeline-items">
           <div className="page-line"></div>
           {this.props.items.map(item => {
-            return <TimelineItem item={item} />
+            return <TimelineItem key={item.title} item={item} />
           })}
         </div>
       </div>
@@ -162,10 +162,10 @@ const TimelineItem = React.createClass({
               {this.props.item.detail}
             </div>
             <ul>
-              {this.props.item.summary.map(i => {
+              {this.props.item.summary.map(item => {
                 return (
-                  <li className="item-summary">
-                    {i}
+                  <li key={item} className="item-summary">
+                    {item}
                   </li>
                 );
               })}
